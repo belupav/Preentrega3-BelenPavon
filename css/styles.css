@@ -1,0 +1,270 @@
+/*todas las clases css empiezan con un . ".hola"*/
+/*las class son para diferenciar el estilo de 1 etiqueta*/
+/*se pueden utilizar en cualquier etiqueta*/
+/*ID sirve para nombrar etiquetas padres*/
+/*ID se llama con un "#"*/
+/*la idea es que no se reutilice*/
+/*reset para que quede de cero*/
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+/*medidas de logo*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .logo {
+  height: 100px;
+}
+header .menu__navegador li {
+  display: column;
+  margin-right: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+header ul, header ol {
+  list-style: none;
+}
+
+/*navegador responsive*/
+@media screen and (min-width: 768px) {
+  .menu__navegador li {
+    display: inline;
+    margin-right: 1rem;
+  }
+}
+.main {
+  background-image: url(../img/banner2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 30rem;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.cabecera .cabecera__boton:hover {
+  background: white;
+  color: black;
+  transition: 0.5s;
+}
+
+@media (max-width: 576px) {
+  .cabecera {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cabecera {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 30rem;
+    position: relative;
+  }
+  .cabecera__contenedor {
+    margin-top: 3rem;
+  }
+  .cabecera__titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+  .cabecera__texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+  }
+  .cabecera__boton {
+    margin-left: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: blanchedalmond;
+  }
+  .boton {
+    margin-left: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: blanchedalmond;
+  }
+}
+/*cabecera titulo responsive*/
+@media screen and (min-width: 768px) {
+  .cabecera__titulo {
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+}
+/*texto cabecera responsive*/
+@media screen and (min-width: 768px) {
+  .cabecera__texto {
+    position: absolute;
+    top: 7rem;
+    right: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+  }
+}
+/*boton de cabecera responsive*/
+@media screen and (min-width: 768px) {
+  .cabecera__boton {
+    position: absolute;
+    top: 10rem;
+    right: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: blanchedalmond;
+  }
+}
+/*estilos de texto contacto*/
+.texto-contacto {
+  background-image: url(../img/banner2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.texto-contacto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.texto-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+.texto-contacto input {
+  margin: 4px;
+}
+.texto-contacto .boton {
+  margin-left: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: black;
+  color: blanchedalmond;
+}
+.texto-contacto a {
+  text-decoration: none;
+}
+
+/* que es fotorama?*/
+.quienes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  margin: 5rem;
+}
+.quienes img {
+  height: 500px;
+  width: 500px;
+}
+.quienes img:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+.quienes .quienes__titulo {
+  text-align: left;
+  font-family: Arial Black;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.quienes .quienes__texto {
+  font-size: 1rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.quienes .quienes__texto span {
+  font-family: "Righteous";
+  font-size: 20px;
+}
+
+/*galeria de imagenes*/
+.galeria {
+  margin: 20px;
+  text-align: center;
+}
+.galeria .contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  margin-top: 20px;
+}
+.galeria h1 {
+  text-align: center;
+  font-family: Arial Black;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.galeria .contenedor-galeria .foto img {
+  filter: brightness(0.5);
+  width: 400px;
+  height: 400px;
+}
+.galeria .contenedor-galeria .foto img:hover {
+  transition: 1s;
+  filter: brightness(1);
+}
+
+@media (max-width: 576px) {
+  .contenedor-galeria {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+}
+/*footer*/
+.footer {
+  margin: 2rem;
+}
+.footer .footer__texto, .footer .footer__agradecimiento {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
+
+/*# sourceMappingURL=styles.css.map */
