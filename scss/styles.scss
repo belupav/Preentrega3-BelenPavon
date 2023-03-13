@@ -172,18 +172,21 @@ div{
     margin-bottom: 5rem;
 }
 form{
+    
     display: flex;
     flex-direction: column;
-}
+
 input{
-    margin: 4px;
+    margin: 4px 0;
 }
 .boton{
     @include Boton();
+    margin-top: 1rem;
     }
  a{
         text-decoration: none;
     }
+}
 }
 
 
@@ -191,12 +194,17 @@ input{
 .quienes{
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight:lighter;
     margin: 5rem;
+.contenedor__textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 img{
         height: 500px;
         width: 500px;
@@ -262,6 +270,11 @@ h1{
         display: flex !important;
         flex-wrap: wrap;
     }
+}
+
+.beneficios__contenedor{
+    justify-content: center;
+    align-items: center;
 }
 
 /*footer*/
